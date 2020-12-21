@@ -7,7 +7,8 @@ def hello_world():
     
 @app.route('/baidu')
 def baidu():
-    return '<h1>www.baidu.com</h1>'  
+    url = 'www.baidu.com'
+    return '<h1>{}</h1>'.format(url)
     
 if __name__ == '__main__':
     app.run(debug=True)
